@@ -48,7 +48,9 @@
             this.DivideButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.CalculatorTableLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // CalculatorTableLayout
@@ -318,10 +320,20 @@
             this.ResultTextBox.Text = "0";
             this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // LogoPictureBox
+            // 
+            this.LogoPictureBox.Image = global::COMP1004_W2017_Lesson3.Properties.Resources.CalculatorLogo;
+            this.LogoPictureBox.Location = new System.Drawing.Point(-1, 3);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(300, 90);
+            this.LogoPictureBox.TabIndex = 2;
+            this.LogoPictureBox.TabStop = false;
+            // 
             // CalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(302, 433);
+            this.Controls.Add(this.LogoPictureBox);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.CalculatorTableLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -330,6 +342,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.CalculatorTableLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,6 +370,7 @@
         private System.Windows.Forms.Button DivideButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.TextBox ResultTextBox;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
     }
 }
 
